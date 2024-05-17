@@ -4,9 +4,9 @@ public class Equipment {
     private int E_id;
     private String E_name;
     private Category E_Category;
-    private Type E_Type;
+    private Status e_Status;
     private Manager E_Manager;
-    private String E_status;
+    private String E_type;
 
     @Override
     public String toString() {
@@ -14,9 +14,9 @@ public class Equipment {
                 "E_id=" + E_id +
                 ", E_name='" + E_name + '\'' +
                 ", E_Category=" + E_Category +
-                ", E_Type=" + E_Type +
+                ", E_Status=" + e_Status +
                 ", E_Manager=" + E_Manager +
-                ", E_status='" + E_status + '\'' +
+                ", E_type='" + E_type + '\'' +
                 '}';
     }
 
@@ -44,12 +44,12 @@ public class Equipment {
         E_Category = e_Category;
     }
 
-    public Type getE_Type() {
-        return E_Type;
+    public Status getE_Type() {
+        return e_Status;
     }
 
-    public void setE_Type(Type e_Type) {
-        E_Type = e_Type;
+    public void setE_Type(Status e_Status) {
+        this.e_Status = e_Status;
     }
 
     public Manager getE_Manager() {
@@ -60,11 +60,11 @@ public class Equipment {
         E_Manager = e_Manager;
     }
 
-    public String getE_status() {
-        return E_status;
+    public String getE_type() {
+        return E_type;
     }
 
-    public void setE_status(String e_status) {
-        E_status = e_status;
+    public void setE_type(String e_type) {
+        E_type = e_type;
     }
 }
